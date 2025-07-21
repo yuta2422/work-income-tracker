@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>バイト収支＆扶養チェッカー</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: white;
+      padding: 1.5em;
+      border-radius: 8px;
+      max-width: 600px;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+    }
+    button {
+      margin-top: 1.5em;
+      padding: 10px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🗓️ バイト収支＆扶養チェッカー</h1>
+  <form>
+    <label>開始日<input type="date"></label>
+    <label>開始時刻<input type="time" step="300"></label>
+    <label>終了日<input type="date"></label>
+    <label>終了時刻<input type="time" step="300"></label>
+    <label>休憩時間（分）<input type="number" value="60"></label>
+    <label>時給（円）<input type="number" value="1000"></label>
+    <label>交通費（円）<input type="number" value="0"></label>
+    <button type="submit">記録する</button>
+  </form>
+</body>
+</html>
